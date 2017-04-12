@@ -1,0 +1,243 @@
+{
+  "type": "FeatureCollection", 
+  "features": [
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.12408166666667, 
+          -34.156945
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9039.JPG", 
+        "time_taken": "2017:04:11 11:09:53"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.124265, 
+          -34.153506666666665
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9040.JPG", 
+        "time_taken": "2017:04:12 10:41:06"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.13122333333334, 
+          -34.150846666666666
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9041.JPG", 
+        "time_taken": "2017:04:11 11:30:40"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.13122333333334, 
+          -34.150846666666666
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9042.JPG", 
+        "time_taken": "2017:04:11 11:30:42"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.13122333333334, 
+          -34.150846666666666
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9043.JPG", 
+        "time_taken": "2017:04:11 11:30:44"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.131205, 
+          -34.15085166666667
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9044.JPG", 
+        "time_taken": "2017:04:11 11:30:51"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.13121833333334, 
+          -34.150846666666666
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9045.JPG", 
+        "time_taken": "2017:04:11 11:31:03"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.13066, 
+          -34.151133333333334
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9046.JPG", 
+        "time_taken": "2017:04:11 11:32:47"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.13061833333333, 
+          -34.15112833333333
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9047.JPG", 
+        "time_taken": "2017:04:11 11:33:00"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.13013333333333, 
+          -34.15157166666667
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9048.JPG", 
+        "time_taken": "2017:04:11 11:34:37"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.13246333333333, 
+          -34.142538333333334
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9049.JPG", 
+        "time_taken": "2017:04:11 11:49:32"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.13245, 
+          -34.142525
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9050.JPG", 
+        "time_taken": "2017:04:11 11:49:42"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.13149333333334, 
+          -34.15153333333333
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9051.JPG", 
+        "time_taken": "2017:04:11 11:59:02"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.131515, 
+          -34.151545
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9052.JPG", 
+        "time_taken": "2017:04:11 11:59:09"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.131635, 
+          -34.15150166666667
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9053.JPG", 
+        "time_taken": "2017:04:11 11:59:28"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.13170833333334, 
+          -34.151455
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9054.JPG", 
+        "time_taken": "2017:04:11 11:59:44"
+      }
+    }, 
+    {
+      "geometry": {
+        "type": "Point", 
+        "coordinates": [
+          118.13138666666667, 
+          -34.151608333333336
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "image": "public/sitevisitCatherine/IMG_9055.JPG", 
+        "time_taken": "2017:04:11 12:00:33"
+      }
+    }
+  ]
+}
