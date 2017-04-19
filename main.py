@@ -5,6 +5,8 @@ import re
 import sys
 import json
 import ast
+from PIL import Image 
+from PIL.ExifTags import TAGS
 from pymongo import MongoClient
 from geojson import Feature, Point, FeatureCollection
 
@@ -24,24 +26,52 @@ def process_file(fn, dir_name):
 def get_geo_tags(tags, fname, dirname):
 
     photoData = {}
-    if 'GPS GPSLongitude' in tags and 'GPS GPSLatitude' in tags:
-        Long = json.loads(str(tags['GPS GPSLongitude']).replace("/",","))
-        longArr = [Long[0], Long[1], float(Long[2])/Long[3]]
-        longitude = longArr[0] + (longArr[1] + float(longArr[2]) / 60) / 100
-        photoData['Long'] = longitude
-        
-        Lat = json.loads(str(tags['GPS GPSLatitude']).replace("/",","))
-        latArr = [Lat[0], Lat[1], float(Lat[2])/Lat[3]]
-        latitude = latArr[0] + (latArr[1] + float(latArr[2]) / 60) / 100
-        photoData['Lat'] = latitude
+    photoData['image'] = dirname + fname
+    i = Image.open(dirname + fname)
+    info = i._getexif()
+    for tag, value in info.items():
+        decoded = TAGS.get(tag, tag)
+        if decoded == 'GPSInfo':
+            
+            lat = value[2]
 
-        photoData['image'] = dirname + fname
+            d0 = lat[0][0]
+            d1 = lat[0][1]
+            d = float(d0) / float(d1)
 
-        time_taken = str(tags['Image DateTime'])
-        photoData['time_taken'] = time_taken
-        dataToJSON(photoData, fname, dirname)
-        
-        return photoData
+            m0 = lat[1][0]
+            m1 = lat[1][1]
+            m = float(m0)/ float(m1)
+
+            s0 = lat[2][0]
+            s1 = lat[2][1]
+            s = float(s0) / float(s1)
+
+            latitude = d + (m / 60.0) + (s / 3600.0)
+
+            lng = value[4]
+
+            d0 = lng[0][0]
+            d1 = lng[0][1]
+            d = float(d0) / float(d1)
+
+            m0 = lng[1][0]
+            m1 = lng[1][1]
+            m = float(m0)/ float(m1)
+
+            s0 = lng[2][0]
+            s1 = lng[2][1]
+            s = float(s0) / float(s1)
+
+            longitude = d + (m / 60.0) + (s / 3600.0)
+
+            photoData['Lat'] = latitude 
+            photoData['Long'] = longitude 
+
+        if decoded == 'DateTime':
+            photoData['time_taken'] = str(value) 
+    dataToJSON(photoData, fname, dirname)
+    return photoData 
          
 def dataToJSON(data, fname, dirname):
     with open('dataDicts/' + re.sub('/','',dirname) + '-' + fname.split('.')[0] + '.json', 'w') as f:

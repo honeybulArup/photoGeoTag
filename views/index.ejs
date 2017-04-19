@@ -14,9 +14,9 @@
 
 <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiaG9uZXlidWxhcnVwIiwiYSI6ImNqMTRwYXR6cDAwZjYyd210OGplNWtxZ3QifQ.sBdd5Z2Y0D-2fkALbI59AQ';
-    var lngInit    = -34.155694824831954;
-    var latInit    = 118.12619887339321;
-    var zmInit     = 13.35551434402889;
+    var lngInit    = -34.229499124242615;
+    var latInit    = 118.11783305351702;
+    var zmInit     = 8.814898222805198;
 
     var map = new mapboxgl.Map({
         container:  'map',
@@ -29,15 +29,15 @@
 
          map.addLayer({
             "id": "points",
-            "type": "circle",
+            "type": "symbol",
             "source": {
                 "type": "geojson",
                 "data": "geojson/data.geojson"
             },
-            "paint": {
-                "circle-color": "red",
-                'circle-radius': 10,
-                'circle-opacity': 0.5
+            "layout": {
+                "icon-image": "attraction-15",
+                "icon-allow-overlap": true,
+                "icon-size": 1.3
             }
          });
        
