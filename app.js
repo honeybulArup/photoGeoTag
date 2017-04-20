@@ -21,6 +21,10 @@ app.get('/', function(req, res){
     res.render('index');
 });
 
-app.listen(3000, function() {
-    console.log('Example App Listening on PORT:3000');
+// app.listen(3000, function() {
+//     console.log('Example App Listening on PORT:3000');
+// });
+
+app.listen(process.env.PORT, process.env.IP, function(){
+   console.log("Heroku Server Started");
 });
